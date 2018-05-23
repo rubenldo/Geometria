@@ -7,6 +7,10 @@ public class Circulo_RLD extends FiguraGeometrica_RLD {
 	public Circulo_RLD(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		
+		if (radio<0) {
+			radio=radio*(-1);			
+		}
 	}
 
 	@Override
